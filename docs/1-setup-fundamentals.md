@@ -133,9 +133,9 @@ Use `@` symbols in prompts to give the agent more context:
 > [!TIP]
 > You can also attach images by clicking the image button or pasting directly into chat.
 
-#### Auto-run modes
+#### Run modes
 
-Go to **Cursor Settings > Agents** and configure **Auto-Run Mode**:
+Go to **Cursor Settings > Agents** and configure **Run mode**:
 
 | Option                           | Behavior                                                                                                                         |
 | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |

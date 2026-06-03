@@ -43,9 +43,9 @@ flowchart LR
 
 ## 2. Command execution risks
 
-### Auto-run settings
+### Run mode settings
 
-See [Setup fundamentals > Auto-run modes][setup-fundamentals] for the mode table, sandbox behavior, and the recommended default (**Allowlist (with Sandbox)**).
+See [Setup fundamentals > Run modes][setup-fundamentals] for the mode table, sandbox behavior, and the recommended default (**Allowlist (with Sandbox)**).
 
 For high-sensitivity projects, use **Allowlist** with an empty allowlist so every command requires approval.
 
@@ -215,12 +215,12 @@ function normalFunction() {
 
 ### Defensive practices
 
-| Defense               | Implementation                                                                                                                         |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Review before opening | Inspect unfamiliar repositories before opening in Cursor                                                                               |
-| Restrict auto-run     | Follow [Setup fundamentals > Auto-run modes][setup-fundamentals]; use an empty allowlist on **Allowlist** for strictest shell approval |
-| Check commands        | Read every command before approving                                                                                                    |
-| Trust boundaries      | Be cautious with third-party or forked code                                                                                            |
+| Defense               | Implementation                                                                                                                    |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Review before opening | Inspect unfamiliar repositories before opening in Cursor                                                                          |
+| Restrict auto-run     | Follow [Setup fundamentals > Run modes][setup-fundamentals]; use an empty allowlist on **Allowlist** for strictest shell approval |
+| Check commands        | Read every command before approving                                                                                               |
+| Trust boundaries      | Be cautious with third-party or forked code                                                                                       |
 
 > [!TIP]
 > When cloning unfamiliar repositories, review the codebase in a simple text editor first. Look for suspicious comments, scripts, or configuration files.
@@ -335,7 +335,7 @@ Use this checklist before working on sensitive projects:
 
 - [ ] `.cursorignore` includes all sensitive files
 - [ ] `.cursorindexingignore` excludes large/irrelevant directories
-- [ ] Auto-run mode set per [Setup fundamentals > Auto-run modes][setup-fundamentals]
+- [ ] Run mode set per [Setup fundamentals > Run modes][setup-fundamentals]
 - [ ] **Run Everything (Unsandboxed)** is not enabled outside isolated environments
 - [ ] `.env` files are git-ignored
 
@@ -379,11 +379,11 @@ Use this checklist before working on sensitive projects:
 - [Cursor Security Advisories][cursor-advisories]
 
 > [!NOTE]
-> See [Setup fundamentals > Auto-run modes][setup-fundamentals] for command execution and sandbox configuration. Report security vulnerabilities via [Cursor Security Advisories][cursor-advisories]; do not disclose publicly until patched.
+> See [Setup fundamentals > Run modes][setup-fundamentals] for command execution and sandbox configuration. Report security vulnerabilities via [Cursor Security Advisories][cursor-advisories]; do not disclose publicly until patched.
 
 <!-- Link definitions -->
 
-[setup-fundamentals]: 1-setup-fundamentals.md#auto-run-modes
+[setup-fundamentals]: 1-setup-fundamentals.md#run-modes
 [cursor-security]: https://cursor.com/docs/agent/security
 [cursor-rules]: https://cursor.com/docs/rules
 [owasp-ai]: https://owaspai.org
